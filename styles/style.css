@@ -1,16 +1,55 @@
-h1 {
-	font-size: 8em;
-	line-height: 0;
+@import url("https://p.typekit.net/p.css?s=1&k=ilv5xlu&ht=tk&f=15758.15759.15760.15761.22737.22738.22739.22740.37509.37510.37511.37512.37513.37514.37515.37516.37517.37518.37519.37520.37521.37522.37523.37524.37525.37526&a=125555771&app=typekit&e=css");
+/* font-family: "merriweather";
+font-family:"poppins"; */
+
+* {
+	margin: 0;
+	padding: 0;
+	/* font-family: 'Times New Roman', Times, serif; */
 }
 
-svg {
+h2 {
 	font-size: 8em;
-	line-height: 0;
 }
 
-button {
-	position: fixed;
-	top: .5em;
-	right: .5em;
-	padding: .25em;
+
+/* VIEW HEIGHT */
+#screen1 {
+	height: 100vh;
+}
+
+#screen2 {
+	height: 100vh;
+	background-color: aqua;
+}
+
+#screen3 {
+	height: 100vh;
+	background-color: green;
+}
+
+#screen4 {
+	height: 100vh;
+	background-image: url("../images/test.png")
+}
+
+#screen5 {
+	height: 100vh;
+}
+
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
+/* SCROLL */
+#scroll {
+	height: 100vh;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+}
+
+#scroll section {
+	scroll-snap-align: start;
 }
