@@ -9,7 +9,8 @@ font-family:"poppins"; */
 }
 
 h2 {
-	font-size: 8em;
+	font-size: 3em;
+	margin-bottom: 1em;
 }
 
 
@@ -39,12 +40,40 @@ h2 {
 	background-color: #DAB500;
 }
 
+
+/* HIDE AND SHOW SECTIONS */
 .hide{
 	display: none;
 }
 .show{
 	display: block;
 }
+
+
+/* BUTTONS */
+button {
+	color: black;
+	background-color: pink;
+	border: solid 0.1em pink;
+	border-radius: 5em;
+	padding: 1em;
+
+	/* display: flex; */
+	position: relative;
+    display: inline-flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+#screen1 section {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 2em;
+}
+
+
+
 /* SCROLL */
 #scroll {
 	height: 100vh;
