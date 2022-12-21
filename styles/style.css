@@ -20,21 +20,23 @@ h2 {
 
 #screen2 {
 	height: 100vh;
-	background-color: aqua;
+	background-color: #FFF9AE;
 }
 
 #screen3 {
 	height: 100vh;
-	background-color: green;
+	background-color: #F8EC62;
 }
 
 #screen4 {
 	height: 100vh;
-	background-image: url("../images/test.png")
+	background-color: #E9D700;
+	/* background-image: url("../images/test.png") */
 }
 
 #screen5 {
 	height: 100vh;
+	background-color: #DAB500;
 }
 
 .hide{
