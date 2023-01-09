@@ -6,11 +6,12 @@ font-family:"poppins"; */
 	margin: 0;
 	padding: 0;
 	/* font-family: 'Times New Roman', Times, serif; */
+	font-family: "poppins";
+	line-height: 1.5em;
 }
 
 h2 {
-	font-size: 3em;
-	margin-bottom: 1em;
+	font-size: 2em;
 }
 
 
@@ -21,23 +22,19 @@ h2 {
 
 #screen2 {
 	height: 100vh;
-	background-color: #FFF9AE;
 }
 
 #screen3 {
 	height: 100vh;
-	background-color: #F8EC62;
 }
 
 #screen4 {
 	height: 100vh;
-	background-color: #E9D700;
 	/* background-image: url("../images/test.png") */
 }
 
 #screen5 {
 	height: 100vh;
-	background-color: #DAB500;
 }
 
 
@@ -50,28 +47,96 @@ h2 {
 }
 
 
-/* BUTTONS */
-button {
+/* SCREEN 1 */
+#screen1 {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	text-align: center;
+	/* margin: 2em; */
+}
+
+#screen1 #banner1 {
+	background-image: url("../images/banner1.jpeg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+#screen1 #banner1 h2 {
+	margin: 0.8em;
+	margin-top: 5em;
+	margin-bottom: 1em;
+	color: white;
+}
+
+#screen1 #content1 {
+	margin: 1em;
+	font-size: 0.8em;
+}
+
+#screen1 p {
+	margin-top: 2em;
+}
+
+#screen1 #buttons1 {
+	display: flex;
+}
+
+#screen1 button {
 	color: black;
 	background-color: pink;
 	border: solid 0.1em pink;
 	border-radius: 5em;
 	padding: 1em;
 
-	/* display: flex; */
-	position: relative;
-    display: inline-flex;
-    /* align-items: center; */
-    /* justify-content: center; */
+	/* display: flex;
+    justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap; */
 }
 
-#screen1 section {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+
+/* SCREEN 2 */
+#screen2 {
+	/* margin: 1em; */
+	padding: 1em;
+	background-color: rgb(243, 243, 243);
+}
+
+#screen2 h2 {
+	font-size: 1.5em;
+	padding-top: 0.5em;
+	text-align: center;
+}
+#screen2 img {
+	width: 100%;
+}
+
+#screen2 p {
+	font-size: 0.75em;
+}
+
+
+/* SCREEN 3 */
+#screen3 {
+	margin: 1em;
+}
+
+#screen3 h2 {
+	font-size: 1.5em;
+	padding-top: 0.5em;
+	text-align: center;
+}
+#screen3 img {
+	width: 100%;
 	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
+#screen3 p {
+	font-size: 0.75em;
+}
 
 
 /* SCROLL */
