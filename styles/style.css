@@ -48,19 +48,23 @@ h2 {
 
 
 /* SCREEN 1 */
-#screen1 {
+/* #screen1 {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	text-align: center;
-	/* margin: 2em; */
-}
+	width: 100%;
+} */
 
 #screen1 #banner1 {
 	background-image: url("../images/banner1.jpeg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+	height: 50vh;
+
+	display: flex;
+	justify-content: center;
 }
 
 #screen1 #banner1 h2 {
@@ -73,6 +77,7 @@ h2 {
 #screen1 #content1 {
 	margin: 1em;
 	font-size: 0.8em;
+	text-align: center;
 }
 
 #screen1 p {
@@ -81,6 +86,8 @@ h2 {
 
 #screen1 #buttons1 {
 	display: flex;
+	/* text-align: center; */
+	justify-content: center;
 }
 
 #screen1 button {
@@ -110,7 +117,8 @@ h2 {
 	text-align: center;
 }
 #screen2 img {
-	width: 100%;
+	width: 50%;
+	display: block;
 }
 
 #screen2 p {
@@ -129,7 +137,8 @@ h2 {
 	text-align: center;
 }
 #screen3 img {
-	width: 100%;
+	display: block;
+	width: 50%;
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
