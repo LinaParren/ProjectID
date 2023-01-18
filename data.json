@@ -1,0 +1,97 @@
+[{
+    "YEAR": "2010",
+    "Lost dividend WHT revenue": "$12.709.364,47",
+    "Lost interest WHT revenue": "$6.093.977,37",
+    "Total lost revenue": "$18.803.341,85",
+    "GDP": "$11.914.471.497,15",
+    "Total lost revenue as % of GDP": "0,16%",
+    "Total lost dividend WHT revenue as % of GDP": "0"
+}, {
+    "YEAR": "2011",
+    "Lost dividend WHT revenue": "$18.342.431,44",
+    "Lost interest WHT revenue": "$32.707.688,88",
+    "Total lost revenue": "$51.050.120,32",
+    "GDP": "$11.104.649.065,16",
+    "Total lost revenue as % of GDP": "0,46%",
+    "Total lost dividend WHT revenue as % of GDP": "0,17%"
+}, {
+    "YEAR": "2012",
+    "Lost dividend WHT revenue": "$20.280.785,89",
+    "Lost interest WHT revenue": "$34.369.212,40",
+    "Total lost revenue": "$54.649.998,29",
+    "GDP": "$14.381.552.466,60",
+    "Total lost revenue as % of GDP": "0,38%",
+    "Total lost dividend WHT revenue as % of GDP": "0,14%"
+}, {
+    "YEAR": "2013",
+    "Lost dividend WHT revenue": "$24.471.153,12",
+    "Lost interest WHT revenue": "$53.390.990,98",
+    "Total lost revenue": "$77.862.144,11",
+    "GDP": "$16.350.813.486,99",
+    "Total lost revenue as % of GDP": "0,48%",
+    "Total lost dividend WHT revenue as % of GDP": "0,15%"
+}, {
+    "YEAR": "2014",
+    "Lost dividend WHT revenue": "$27.599.794,61",
+    "Lost interest WHT revenue": "$95.895.291,53",
+    "Total lost revenue": "$123.495.086,14",
+    "GDP": "$16.974.314.296,22",
+    "Total lost revenue as % of GDP": "0,73%",
+    "Total lost dividend WHT revenue as % of GDP": "0"
+}, {
+    "YEAR": "2015",
+    "Lost dividend WHT revenue": "$49.793.898,68",
+    "Lost interest WHT revenue": "$95.367.472,97",
+    "Total lost revenue": "$145.161.371,65",
+    "GDP": "$15.950.979.333,16",
+    "Total lost revenue as % of GDP": "0,91%",
+    "Total lost dividend WHT revenue as % of GDP": "0,31%"
+}, {
+    "YEAR": "2016",
+    "Lost dividend WHT revenue": "$43.821.882,53",
+    "Lost interest WHT revenue": "$120.975.907,72",
+    "Total lost revenue": "$164.797.790,26",
+    "GDP": "$11.936.993.086,96",
+    "Total lost revenue as % of GDP": "1,38%",
+    "Total lost dividend WHT revenue as % of GDP": "0,37%"
+}, {
+    "YEAR": "2017",
+    "Lost dividend WHT revenue": "$41.026.271,97",
+    "Lost interest WHT revenue": "$163.589.876,76",
+    "Total lost revenue": "$204.616.148,73",
+    "GDP": "$13.219.079.497,71",
+    "Total lost revenue as % of GDP": "1,55%",
+    "Total lost dividend WHT revenue as % of GDP": "0,31%"
+}, {
+    "YEAR": "2018",
+    "Lost dividend WHT revenue": "$43.552.137,30",
+    "Lost interest WHT revenue": "$132.861.706,58",
+    "Total lost revenue": "$176.413.843,88",
+    "GDP": "$14.845.400.592,67",
+    "Total lost revenue as % of GDP": "1,19%",
+    "Total lost dividend WHT revenue as % of GDP": "0,29%"
+}, {
+    "YEAR": "2019",
+    "Lost dividend WHT revenue": "$51.346.025,27",
+    "Lost interest WHT revenue": "$135.104.824,53",
+    "Total lost revenue": "$186.450.849,81",
+    "GDP": "$15.390.031.040,00",
+    "Total lost revenue as % of GDP": "1,21%",
+    "Total lost dividend WHT revenue as % of GDP": "0,33%"
+}, {
+    "YEAR": "2020",
+    "Lost dividend WHT revenue": "$55.247.464,59",
+    "Lost interest WHT revenue": "$148.868.366,20",
+    "Total lost revenue": "$204.115.830,79",
+    "GDP": "$14.028.811.071,76",
+    "Total lost revenue as % of GDP": "1,45%",
+    "Total lost dividend WHT revenue as % of GDP": "0,39%"
+}, {
+    "YEAR": "Total",
+    "Lost dividend WHT revenue": "$388.191.209,89",
+    "Lost interest WHT revenue": "$1.019.225.315,92",
+    "Total lost revenue": "$1.407.416.525,81",
+    "GDP": "0",
+    "Total lost revenue as % of GDP": "0,90%",
+    "Total lost dividend WHT revenue as % of GDP": "0"
+}]

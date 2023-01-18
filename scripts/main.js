@@ -1,47 +1,115 @@
-const svg = d3.select("#map1"),
-    width = +svg.attr("width"),
-    height = +svg.attr("height");
+// DATA 1.4 LOSS
+
+fetch('https://opensheet.elk.sh/1ruaa1MeV_-utrSGHXwmI_JoY_64e90BBS_UswFq9vmE/loss')
+	.then(res => res.json())
+	.then(data => {
+		const dataResults = []
+
+		data.forEach(item => {
+            dataResults.push({year: item["YEAR"], revenue: item["Total lost revenue"]})
+        })
+
+		console.log(dataResults)
+});
+
+// MAP 1
+
+const width = 780
+const height = 450 
+
+const svg = d3.select("#map1").attr('width', width).attr('height', height)
 
 const projection = d3.geoNaturalEarth1()
-    .scale(width / 1.3 / Math.PI)
-    .translate([width / 2, height / 2])
+    .scale(width / 1.7 / Math.PI)
+    .translate([width / 2.10, height / 1.65])
 
-const link = [
-	{type: "LineString", coordinates: [[255, 175], [190, 80]]}
-	]
+const dtacountries = ["Portugal", "Mauritius", "Italy", "United Arab Emirates", "South Africa", "Macao", "India", "Vietnam"]
 
-d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson").then( function(data) {
+// d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson").then( function(data) {
+
+d3.json("../map.json").then( function(data) {
+
+	const Tooltip = d3.select("body")
+	.append("div")
+	.attr("class", "tooltip")
+	.style("position", "absolute")
+	.style("opacity", 0)
+	.style("color", "white")
+	.style("background-color", "red")
+	.style("padding", "1em")
+	.style("border", "2px black solid")
+	.style("font-weight", "bold")
+
+	function mouseOver(e,d) {
+
+		if(dtacountries.includes(d.properties.name)) {
+				Tooltip.style("opacity", 1)
+				d3.select(this)
+					.style("fill", "#00cfb7")
+				d3.select(".tooltip")
+				// .html(d.properties.name + "<br>/</br>",d.properties.test)
+				.html(`<span>${d.properties.name}<br/>Loss: ${d.properties.test}</span>`)
+			} else {
+				console.log("fout")
+			}
+	}
+
+	function mouseMove (e) {
+        d3.select(".tooltip")
+            .style("left", e.pageX + 15 + "px")
+            .style("top", e.pageY + 15 + "px")
+    }
+
+    function mouseOut (e, d) {
+		if(dtacountries.includes(d.properties.name)) {
+			d3.select(this)
+				.style("fill", "red")
+		}
+		d3.select(".tooltip")
+			.style("opacity", 0)
+	}
 
     svg.append("g")
         .selectAll("path")
         .data(data.features)
         .join("path")
-            .attr("fill", "#69b3a2")
             .attr("d", d3.geoPath()
             .projection(projection)
             )
-            .style("stroke", "#fff")
+            // .style("stroke", "#fff")
 			.attr("fill", function (d) {
 				// Hier dataset
-				if(d.properties.name == "Mozambique") {
+				if(dtacountries.includes(d.properties.name)) {
 				return "red"
 				} else {
 				   return "grey"
 			   }
 		   })
+	// 	   .attr("fill", function (d) {
+	// 		// Hier dataset
+	// 		if((d.properties.name == "Mauritius")) {
+	// 		return "blue"
+	// 		} else {
+	// 		   return "grey"
+	// 	   }
+	//    })
+		   .on("mouseover touchstart", mouseOver )
+		   .on("mousemove", mouseMove)
+           .on("mouseout", mouseOut)
 
-		   svg.selectAll("myPath")
-		   .data(link)
-		   .join("path")
-			 .attr("d", function(d){ return path(d)})
-			 .style("fill", "none")
-			 .style("stroke", "blue")
-			 .style("stroke-width", 3)
+		//    svg.selectAll("myPath")
+		//    .join("path")
+		// 	 .attr("d", function(d){ return path(d)})
+		// 	 .style("fill", "none")
+		// 	 .style("stroke", "blue")
+		// 	 .style("stroke-width", 3)
 })
 
+// MAP 2
+
 const svg2 = d3.select("#map2"),
-  width2 = +svg.attr("width"),
-  height2 = +svg.attr("height");
+  width2 = +svg2.attr("width"),
+  height2 = +svg2.attr("height");
 
 const path = d3.geoPath();
 const projection2 = d3.geoMercator()
@@ -50,9 +118,14 @@ const projection2 = d3.geoMercator()
   .translate([width2 / 2, height2 / 2]);
 
 let data = new Map()
-const colorScale = d3.scaleThreshold()
-  .domain([100000, 1000000, 10000000, 30000000, 100000000, 500000000])
-  .range(d3.schemeReds[7]);
+const colorScale = d3.scaleOrdinal().domain(data)
+.range(["#e30513", "#970613", "#f18188", "#f9cbce"])
+svg2.selectAll(".firstrow").data(data).enter().append("circle").attr("cx", function(d,i){return 30 + i*60}).attr("cy", 50).attr("r", 19).attr("fill", function(d){return myColor(d) })
+
+
+// d3.scaleThreshold()
+//   .domain([100000, 1000000, 10000000, 30000000, 100000000, 500000000])
+//   .range(d3.schemeReds[7]);
 
 Promise.all([
 d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
@@ -76,6 +149,8 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/wo
         return colorScale(d.total);
       })
 })
+
+// LINA
 
 const screen1 = document.querySelector("#screen1");
 const screen2 = document.querySelector("#screen2");
