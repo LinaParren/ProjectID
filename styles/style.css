@@ -17,76 +17,111 @@ h2 {
 
 /* VIEW HEIGHT */
 #screen1 {
-	height: 100vh;
+	background-image: url("../images/banner1.jpeg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 #screen2 {
-	height: 100vh;
+	background-image: url("../images/screen2.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 #screen3 {
-	height: 100vh;
+	/* background-image: url("../images/banner1.jpeg"); */
+	background-color: #56A5A3;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#screenmap {
+	/* background-image: url("../images/banner1.jpeg"); */
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 #screen4 {
-	height: 100vh;
-	/* background-image: url("../images/test.png") */
+	background-image: url("../images/banner1.jpeg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 #screen5 {
-	height: 100vh;
+	/* background-image: url("../images/banner1.jpeg"); */
+	background-color: #56A5A3;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#screen6 {
+	background-image: url("../images/banner1.jpeg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 
 /* HIDE AND SHOW SECTIONS */
-.hide{
+.hide {
 	display: none;
 }
-.show{
+
+.show {
 	display: block;
 }
 
 
 /* SCREEN 1 */
-/* #screen1 {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	text-align: center;
-	width: 100%;
-} */
-
-#screen1 #banner1 {
-	background-image: url("../images/banner1.jpeg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	height: 50vh;
-
-	display: flex;
-	justify-content: center;
+#screen1 #body1 {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10vh;
+	padding-bottom: 100vh;
 }
 
-#screen1 #banner1 h2 {
-	margin: 0.8em;
-	margin-top: 5em;
-	margin-bottom: 1em;
-	color: white;
+#screen1 #title1 {
+	background-color: #56A5A3;
+	border: solid 0.3em white;
+	/* height: 40vh; */
+	width: 45vw;
+	padding: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60vh;
+}
+
+#screen1 #title1 h2 {
+	font-size: 3em;
+	text-align: center;
 }
 
 #screen1 #content1 {
-	margin: 1em;
-	font-size: 0.8em;
+	background-color: #56A5A3;
+	border: solid 0.3em white;
+	width: 50vw;
+	padding: 2em;
 	text-align: center;
 }
 
-#screen1 p {
-	margin-top: 2em;
-}
-
-#screen1 #buttons1 {
+/* #screen1 #buttons1 {
 	display: flex;
-	/* text-align: center; */
+	text-align: center;
 	justify-content: center;
 }
 
@@ -97,59 +132,244 @@ h2 {
 	border-radius: 5em;
 	padding: 1em;
 
-	/* display: flex;
+	display: flex;
     justify-content: space-between;
 	flex-direction: row;
-	flex-wrap: wrap; */
-}
+	flex-wrap: wrap;
+} */
+
 
 
 /* SCREEN 2 */
-#screen2 {
-	/* margin: 1em; */
-	padding: 1em;
-	background-color: rgb(243, 243, 243);
+#screen2 #body2 {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10vh;
+	padding-bottom: 100vh;
 }
 
-#screen2 h2 {
-	font-size: 1.5em;
-	padding-top: 0.5em;
+#screen2 #title2 {
+	background-color: #56A5A3;
+	border: solid 0.3em white;
+	/* height: 40vh; */
+	width: 45vw;
+	padding: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60vh;
+}
+
+#screen2 #title2 h2 {
+	font-size: 3em;
 	text-align: center;
 }
-#screen2 img {
-	width: 50%;
-	display: block;
+
+#screen2 #content2 {
+	background-color: #56A5A3;
+	border: solid 0.3em white;
+	width: 50vw;
+	padding: 2em;
+	text-align: center;
 }
 
-#screen2 p {
-	font-size: 0.75em;
+#screen2 img {
+	width: 30%;
 }
+
+#screen2 #screen21 {
+	display: flex;
+	flex-direction: row;
+}
+
+#screen2 #screen22 {
+	display: flex;
+	flex-direction: row;
+}
+
+#screen2 #screen23 {
+	display: flex;
+	flex-direction: row;
+}
+
+
 
 
 /* SCREEN 3 */
-#screen3 {
-	margin: 1em;
+#screen3 #body3 {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10vh;
+	padding-bottom: 100vh;
 }
 
-#screen3 h2 {
-	font-size: 1.5em;
-	padding-top: 0.5em;
+#screen3 #title3 {
+	background-color: #56A5A3;
+	border: solid 0.3em white;
+	/* height: 40vh; */
+	width: 45vw;
+	padding: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60vh;
+}
+
+#screen3 #title3 h2 {
+	font-size: 3em;
 	text-align: center;
 }
-#screen3 img {
-	display: block;
-	width: 50%;
-	margin-top: 2em;
-	margin-bottom: 2em;
+
+#screen3 #content3 {
+	background-color: #56A5A3;
+	border: solid 0.3em white;
+	width: 50vw;
+	padding: 2em;
+	text-align: center;
 }
 
-#screen3 p {
-	font-size: 0.75em;
+
+
+/* SCREEN MAP  */
+#screenmap #bodymap {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10vh;
+	padding-bottom: 100vh;
+}
+
+#screenmap #titlemap {
+	background-color: #56A5A3;
+	border: solid 0.3em white;
+	/* height: 40vh; */
+	width: 45vw;
+	padding: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60vh;
+}
+
+#screenmap #titlemap h2 {
+	font-size: 3em;
+	text-align: center;
+}
+
+#screenmap #contentmap {
+	background-color: #56A5A3;
+	border: solid 0.3em white;
+	/* width: 50vw; */
+	padding: 2em;
+	text-align: center;
+}
+
+
+/* SCREEN 4 */
+#screen4 #body4 {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10vh;
+	padding-bottom: 100vh;
+}
+
+#screen4 #title4 {
+	background-color: #56A5A3;
+	border: solid 0.3em white;
+	/* height: 40vh; */
+	width: 45vw;
+	padding: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60vh;
+}
+
+#screen4 #title4 h2 {
+	font-size: 3em;
+	text-align: center;
+}
+
+#screen4 #content4 {
+	background-color: #56A5A3;
+	border: solid 0.3em white;
+	width: 50vw;
+	padding: 2em;
+	text-align: center;
+}
+
+
+
+/* SCREEN 5 */
+#screen5 #body5 {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10vh;
+	padding-bottom: 100vh;
+}
+
+#screen5 #title5 {
+	background-color: #56A5A3;
+	border: solid 0.3em white;
+	/* height: 40vh; */
+	width: 45vw;
+	padding: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60vh;
+}
+
+#screen5 #title5 h2 {
+	font-size: 3em;
+	text-align: center;
+}
+
+#screen5 #content5 {
+	background-color: #56A5A3;
+	border: solid 0.3em white;
+	width: 50vw;
+	padding: 2em;
+	text-align: center;
+}
+
+
+
+/* SCREEN 6 */
+#screen6 #body6 {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10vh;
+	padding-bottom: 100vh;
+}
+
+#screen6 #title6 {
+	background-color: #56A5A3;
+	border: solid 0.3em white;
+	/* height: 40vh; */
+	width: 45vw;
+	padding: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60vh;
+}
+
+#screen6 #title6 h2 {
+	font-size: 3em;
+	text-align: center;
+}
+
+#screen6 #content6 {
+	background-color: #56A5A3;
+	border: solid 0.3em white;
+	width: 50vw;
+	padding: 2em;
+	text-align: center;
 }
 
 
 /* SCROLL */
-#scroll {
+/* #scroll {
 	height: 100vh;
 	overflow-y: scroll;
 	scroll-snap-type: y mandatory;
@@ -157,4 +377,91 @@ h2 {
 
 #scroll section {
 	scroll-snap-align: start;
+} */
+
+
+/* #volledigwoord {
+	display: none;
+	margin: 0;
 }
+
+#afkorting:hover+#volledigwoord {
+	display: block;
+	color: red;
+	margin: 0;
+} */
+
+
+
+
+/* Popup container - can be anything you want */
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	/* text-align: center; */
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+
+
+
+
