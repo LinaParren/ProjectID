@@ -1,6 +1,6 @@
-import '../styles/style.css'
-import * as d3 from 'd3';
-import { style } from 'd3';
+// import '../styles/style.css'
+// import * as d3 from 'd3';
+// import { style } from 'd3';
 
 
 
