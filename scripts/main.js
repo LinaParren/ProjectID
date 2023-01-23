@@ -135,66 +135,66 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/wo
 // -------------------------------
 
 
-const screen1 = document.querySelector("#screen1");
-const screen2 = document.querySelector("#screen2");
-const screen3 = document.querySelector("#screen3");
-const screen4 = document.querySelector("#screen4");
-const screen5 = document.querySelector("#screen5");
+// const screen1 = document.querySelector("#screen1");
+// const screen2 = document.querySelector("#screen2");
+// const screen3 = document.querySelector("#screen3");
+// const screen4 = document.querySelector("#screen4");
+// const screen5 = document.querySelector("#screen5");
 
 
-const button4 = document.querySelector("#time4");
-button4.addEventListener("click", chooseTime4);
-const button6 = document.querySelector("#time6");
-button6.addEventListener("click", chooseTime6);
-const button10 = document.querySelector("#time10");
-button10.addEventListener("click", chooseTime10);
-const button13 = document.querySelector("#time13");
-button13.addEventListener("click", chooseTime13);
+// const button4 = document.querySelector("#time4");
+// button4.addEventListener("click", chooseTime4);
+// const button6 = document.querySelector("#time6");
+// button6.addEventListener("click", chooseTime6);
+// const button10 = document.querySelector("#time10");
+// button10.addEventListener("click", chooseTime10);
+// const button13 = document.querySelector("#time13");
+// button13.addEventListener("click", chooseTime13);
 
 
-function chooseTime4() {
-	screen2.classList.remove("show");
-	screen3.classList.remove("show");
-	screen4.classList.remove("show");
-	screen5.classList.remove("show");
-	screen2.classList.add("show");
-	screen3.classList.add("hide");
-	screen4.classList.add("hide");
-	screen5.classList.add("hide");
-}
+// function chooseTime4() {
+// 	screen2.classList.remove("show");
+// 	screen3.classList.remove("show");
+// 	screen4.classList.remove("show");
+// 	screen5.classList.remove("show");
+// 	screen2.classList.add("show");
+// 	screen3.classList.add("hide");
+// 	screen4.classList.add("hide");
+// 	screen5.classList.add("hide");
+// }
 
-function chooseTime6() {
-	screen2.classList.remove("show");
-	screen3.classList.remove("show");
-	screen4.classList.remove("show");
-	screen5.classList.remove("show");
-	screen2.classList.add("show");
-	screen3.classList.add("show");
-	screen4.classList.add("hide");
-	screen5.classList.add("hide");
-}
+// function chooseTime6() {
+// 	screen2.classList.remove("show");
+// 	screen3.classList.remove("show");
+// 	screen4.classList.remove("show");
+// 	screen5.classList.remove("show");
+// 	screen2.classList.add("show");
+// 	screen3.classList.add("show");
+// 	screen4.classList.add("hide");
+// 	screen5.classList.add("hide");
+// }
 
-function chooseTime10() {
-	screen2.classList.remove("show");
-	screen3.classList.remove("show");
-	screen4.classList.remove("show");
-	screen5.classList.remove("show");
-	screen2.classList.add("show");
-	screen3.classList.add("show");
-	screen4.classList.add("show");
-	screen5.classList.add("hide");
-}
+// function chooseTime10() {
+// 	screen2.classList.remove("show");
+// 	screen3.classList.remove("show");
+// 	screen4.classList.remove("show");
+// 	screen5.classList.remove("show");
+// 	screen2.classList.add("show");
+// 	screen3.classList.add("show");
+// 	screen4.classList.add("show");
+// 	screen5.classList.add("hide");
+// }
 
-function chooseTime13() {
-	screen2.classList.remove("show");
-	screen3.classList.remove("show");
-	screen4.classList.remove("show");
-	screen5.classList.remove("show");
-	screen2.classList.add("show");
-	screen3.classList.add("show");
-	screen4.classList.add("show");
-	screen5.classList.add("show");
-}
+// function chooseTime13() {
+// 	screen2.classList.remove("show");
+// 	screen3.classList.remove("show");
+// 	screen4.classList.remove("show");
+// 	screen5.classList.remove("show");
+// 	screen2.classList.add("show");
+// 	screen3.classList.add("show");
+// 	screen4.classList.add("show");
+// 	screen5.classList.add("show");
+// }
 	
 
 // -------------------------------------
@@ -209,3 +209,118 @@ function myFunction() {
 // -------------------------------------
 
 
+
+let body = document.querySelector('body');
+
+// Create the observer
+let observer1 = new IntersectionObserver(callback1);
+let observer2 = new IntersectionObserver(callback2);
+let observer3 = new IntersectionObserver(callback3);
+let observermap = new IntersectionObserver(callbackmap);
+let observer4 = new IntersectionObserver(callback4);
+let observer5 = new IntersectionObserver(callback5);
+let observer6 = new IntersectionObserver(callback6);
+
+// Target the element you want to observe
+let target1 = document.querySelector('#screen2');
+let target2 = document.querySelector('#screen3');
+let target3 = document.querySelector('#screenmap');
+let targetmap = document.querySelector('#screen4');
+let target4 = document.querySelector('#screen5');
+let target5 = document.querySelector('#screen6');
+let target6 = document.querySelector('#screen1');
+
+observer1.observe(target1);
+observer2.observe(target2);
+observer3.observe(target3);
+observermap.observe(targetmap);
+observer4.observe(target4);
+observer5.observe(target5);
+observer6.observe(target6);
+
+function callback1(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            console.log('Element is in the viewport!');
+			body.style.backgroundImage = "url(../images/screen2.jpeg)"
+			body.style.backgroundSize = "cover";
+			body.style.backgroundRepeat = "no-repeat";
+			body.style.backgroundAttachment = "fixed";
+        }
+    });
+}
+
+function callback2(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            console.log('Element is in the viewport!');
+			body.style.backgroundImage = "url(../images/screen3.jpeg)"
+			body.style.backgroundSize = "cover";
+			body.style.backgroundRepeat = "no-repeat";
+			body.style.backgroundAttachment = "fixed";
+        } 
+    });
+}
+
+function callback3(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            console.log('Element is in the viewport!');
+			body.style.backgroundImage = "url(../images/screen1.jpeg)"
+			body.style.backgroundSize = "cover";
+			body.style.backgroundRepeat = "no-repeat";
+			body.style.backgroundAttachment = "fixed";
+        } 
+    });
+}
+
+function callbackmap(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+			console.log('kaas');
+            console.log('Element is in the viewport!');
+			body.style.backgroundColor = "red";
+			body.style.backgroundImage = '';
+			// body.style.backgroundImage = "url(../images/screen2.jpg)"
+			// body.style.backgroundSize = "cover";
+			// body.style.backgroundRepeat = "no-repeat";
+			// body.style.backgroundAttachment = "fixed";
+        } 
+    });
+}
+
+function callback4(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            console.log('Element is in the viewport!');
+			body.style.backgroundImage = "url(../images/screen4.jpeg)"
+			body.style.backgroundSize = "cover";
+			body.style.backgroundRepeat = "no-repeat";
+			body.style.backgroundAttachment = "fixed";
+        } 
+    });
+}
+
+function callback5(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            console.log('Element is in the viewport!');
+			body.style.backgroundImage = "url(../images/screen1.jpeg)"
+			body.style.backgroundSize = "cover";
+			body.style.backgroundRepeat = "no-repeat";
+			body.style.backgroundAttachment = "fixed";
+        } 
+    });
+}
+
+function callback6(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            console.log('Element is in the viewport!');
+			body.style.backgroundImage = "url(../images/screen1.jpeg)"
+			body.style.backgroundSize = "cover";
+			body.style.backgroundRepeat = "no-repeat";
+			body.style.backgroundAttachment = "fixed";
+        } 
+    });
+}
