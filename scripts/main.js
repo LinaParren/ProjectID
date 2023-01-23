@@ -30,8 +30,6 @@ const projection = d3.geoNaturalEarth1()
 
 const dtacountries = ["Portugal", "Mauritius", "Italy", "United Arab Emirates", "South Africa", "Macao", "India", "Vietnam"]
 
-// d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson").then( function(data) {
-
 d3.json("../map.json").then( function(data) {
 
 	const Tooltip = d3.select("body")
@@ -52,7 +50,6 @@ d3.json("../map.json").then( function(data) {
 				d3.select(this)
 					.style("fill", "#00cfb7")
 				d3.select(".tooltip")
-				// .html(d.properties.name + "<br>/</br>",d.properties.test)
 				.html(`<span>${d.properties.name}<br/>Loss: ${d.properties.test}</span>`)
 			} else {
 				console.log("fout")
@@ -81,7 +78,6 @@ d3.json("../map.json").then( function(data) {
             .attr("d", d3.geoPath()
             .projection(projection)
             )
-            // .style("stroke", "#fff")
 			.attr("fill", function (d) {
 				// Hier dataset
 				if(dtacountries.includes(d.properties.name)) {
@@ -90,24 +86,9 @@ d3.json("../map.json").then( function(data) {
 				   return "grey"
 			   }
 		   })
-	// 	   .attr("fill", function (d) {
-	// 		// Hier dataset
-	// 		if((d.properties.name == "Mauritius")) {
-	// 		return "blue"
-	// 		} else {
-	// 		   return "grey"
-	// 	   }
-	//    })
 		   .on("mouseover touchstart", mouseOver )
 		   .on("mousemove", mouseMove)
            .on("mouseout", mouseOut)
-
-		//    svg.selectAll("myPath")
-		//    .join("path")
-		// 	 .attr("d", function(d){ return path(d)})
-		// 	 .style("fill", "none")
-		// 	 .style("stroke", "blue")
-		// 	 .style("stroke-width", 3)
 })
 
 // MAP 2
@@ -126,11 +107,6 @@ let data = new Map()
 const colorScale = d3.scaleOrdinal().domain(data)
 .range(["#e30513", "#970613", "#f18188", "#f9cbce"])
 svg2.selectAll(".firstrow").data(data).enter().append("circle").attr("cx", function(d,i){return 30 + i*60}).attr("cy", 50).attr("r", 19).attr("fill", function(d){return myColor(d) })
-
-
-// d3.scaleThreshold()
-//   .domain([100000, 1000000, 10000000, 30000000, 100000000, 500000000])
-//   .range(d3.schemeReds[7]);
 
 Promise.all([
 d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
@@ -155,7 +131,9 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/wo
       })
 })
 
-// LINA
+
+// -------------------------------
+
 
 const screen1 = document.querySelector("#screen1");
 const screen2 = document.querySelector("#screen2");
