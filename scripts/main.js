@@ -1,4 +1,9 @@
-// DATA 1.4 LOSS
+import '../styles/style.css'
+import * as d3 from 'd3';
+import { style } from 'd3';
+
+
+
 
 fetch('https://opensheet.elk.sh/1ruaa1MeV_-utrSGHXwmI_JoY_64e90BBS_UswFq9vmE/loss')
 	.then(res => res.json())
