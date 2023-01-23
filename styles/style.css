@@ -17,9 +17,16 @@ h2 {
 	font-size: 2em;
 }
 
+body {
+	background-image: url("../images/banner1.jpeg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
 
 /* VIEW HEIGHT */
-#screen1 {
+/* #screen1 {
 	background-image: url("../images/banner1.jpeg");
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -36,7 +43,7 @@ h2 {
 }
 
 #screen3 {
-	/* background-image: url("../images/banner1.jpeg"); */
+	background-image: url("../images/banner1.jpeg");
 	background-color: #3D5A5B;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -45,7 +52,7 @@ h2 {
 }
 
 #screenmap {
-	/* background-image: url("../images/banner1.jpeg"); */
+	background-image: url("../images/banner1.jpeg");
 	background-color: #3D5A5B;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -62,7 +69,7 @@ h2 {
 }
 
 #screen5 {
-	/* background-image: url("../images/banner1.jpeg"); */
+	background-image: url("../images/banner1.jpeg");
 	background-color: #3D5A5B;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -76,7 +83,7 @@ h2 {
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
-}
+} */
 
 
 /* HIDE AND SHOW SECTIONS */
@@ -95,7 +102,7 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 10vh;
-	padding-bottom: 100vh;
+	margin-bottom: 100vh;
 }
 
 #screen1 #title1 {
@@ -149,7 +156,7 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 10vh;
-	padding-bottom: 100vh;
+	margin-bottom: 100vh;
 }
 
 #screen2 #title2 {
@@ -204,7 +211,7 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 10vh;
-	padding-bottom: 100vh;
+	margin-bottom: 100vh;
 }
 
 #screen3 #title3 {
@@ -239,7 +246,7 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 10vh;
-	padding-bottom: 100vh;
+	margin-bottom: 100vh;
 }
 
 #screenmap #titlemap {
@@ -273,7 +280,7 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 10vh;
-	padding-bottom: 100vh;
+	margin-bottom: 100vh;
 }
 
 #screen4 #title4 {
@@ -308,7 +315,7 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 10vh;
-	padding-bottom: 100vh;
+	margin-bottom: 100vh;
 }
 
 #screen5 #title5 {
@@ -343,7 +350,7 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 10vh;
-	padding-bottom: 100vh;
+	margin-bottom: 100vh;
 }
 
 #screen6 #title6 {
