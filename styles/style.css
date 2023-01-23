@@ -1,7 +1,7 @@
 /* @import url("https://p.typekit.net/p.css?s=1&k=ilv5xlu&ht=tk&f=15758.15759.15760.15761.22737.22738.22739.22740.37509.37510.37511.37512.37513.37514.37515.37516.37517.37518.37519.37520.37521.37522.37523.37524.37525.37526&a=125555771&app=typekit&e=css"); */
 @import url("https://use.typekit.net/ilv5xlu.css");
 
-@import "./_variables.css";
+/* @import "./_variables.css"; */
 /* @import "./_fonts.css"; */
 
 * {
@@ -63,7 +63,7 @@ h2 {
 
 #screen5 {
 	/* background-image: url("../images/banner1.jpeg"); */
-	background-color: #56A5A3;
+	background-color: #3D5A5B;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
