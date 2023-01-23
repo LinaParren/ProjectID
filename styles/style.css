@@ -1,16 +1,16 @@
-@import url("https://p.typekit.net/p.css?s=1&k=ilv5xlu&ht=tk&f=15758.15759.15760.15761.22737.22738.22739.22740.37509.37510.37511.37512.37513.37514.37515.37516.37517.37518.37519.37520.37521.37522.37523.37524.37525.37526&a=125555771&app=typekit&e=css");
-/* font-family: "merriweather";
-font-family:"poppins"; */
+/* @import url("https://p.typekit.net/p.css?s=1&k=ilv5xlu&ht=tk&f=15758.15759.15760.15761.22737.22738.22739.22740.37509.37510.37511.37512.37513.37514.37515.37516.37517.37518.37519.37520.37521.37522.37523.37524.37525.37526&a=125555771&app=typekit&e=css"); */
+@import url("https://use.typekit.net/ilv5xlu.css");
 
 @import "./_variables.css";
-@import "./_fonts.css";
+/* @import "./_fonts.css"; */
 
 * {
 	margin: 0;
 	padding: 0;
 	/* font-family: 'Times New Roman', Times, serif; */
-	font-family: "poppins";
+	font-family: "montserrat";
 	line-height: 1.5em;
+	color: white;
 }
 
 h2 {
@@ -37,7 +37,7 @@ h2 {
 
 #screen3 {
 	/* background-image: url("../images/banner1.jpeg"); */
-	background-color: #56A5A3;
+	background-color: #3D5A5B;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -99,8 +99,8 @@ h2 {
 }
 
 #screen1 #title1 {
-	background-color: #56A5A3;
-	border: solid 0.3em white;
+	background-color: #3D5A5B;
+	border: solid 0.2em white;
 	/* height: 40vh; */
 	width: 45vw;
 	padding: 2em;
@@ -115,8 +115,8 @@ h2 {
 }
 
 #screen1 #content1 {
-	background-color: #56A5A3;
-	border: solid 0.3em white;
+	background-color: #3D5A5B;
+	border: solid 0.2em white;
 	width: 50vw;
 	padding: 2em;
 	text-align: center;
@@ -153,8 +153,8 @@ h2 {
 }
 
 #screen2 #title2 {
-	background-color: #56A5A3;
-	border: solid 0.3em white;
+	background-color: #3D5A5B;
+	border: solid 0.2em white;
 	/* height: 40vh; */
 	width: 45vw;
 	padding: 2em;
@@ -169,8 +169,8 @@ h2 {
 }
 
 #screen2 #content2 {
-	background-color: #56A5A3;
-	border: solid 0.3em white;
+	background-color: #3D5A5B;
+	border: solid 0.2em white;
 	width: 50vw;
 	padding: 2em;
 	text-align: center;
@@ -208,8 +208,8 @@ h2 {
 }
 
 #screen3 #title3 {
-	background-color: #56A5A3;
-	border: solid 0.3em white;
+	background-color: #3D5A5B;
+	border: solid 0.2em white;
 	/* height: 40vh; */
 	width: 45vw;
 	padding: 2em;
@@ -224,8 +224,8 @@ h2 {
 }
 
 #screen3 #content3 {
-	background-color: #56A5A3;
-	border: solid 0.3em white;
+	background-color: #3D5A5B;
+	border: solid 0.2em white;
 	width: 50vw;
 	padding: 2em;
 	text-align: center;
@@ -243,8 +243,8 @@ h2 {
 }
 
 #screenmap #titlemap {
-	background-color: #56A5A3;
-	border: solid 0.3em white;
+	background-color: #3D5A5B;
+	border: solid 0.2em white;
 	/* height: 40vh; */
 	width: 45vw;
 	padding: 2em;
@@ -259,8 +259,8 @@ h2 {
 }
 
 #screenmap #contentmap {
-	background-color: #56A5A3;
-	border: solid 0.3em white;
+	background-color: #3D5A5B;
+	border: solid 0.2em white;
 	/* width: 50vw; */
 	padding: 2em;
 	text-align: center;
@@ -277,8 +277,8 @@ h2 {
 }
 
 #screen4 #title4 {
-	background-color: #56A5A3;
-	border: solid 0.3em white;
+	background-color: #3D5A5B;
+	border: solid 0.2em white;
 	/* height: 40vh; */
 	width: 45vw;
 	padding: 2em;
@@ -293,8 +293,8 @@ h2 {
 }
 
 #screen4 #content4 {
-	background-color: #56A5A3;
-	border: solid 0.3em white;
+	background-color: #3D5A5B;
+	border: solid 0.2em white;
 	width: 50vw;
 	padding: 2em;
 	text-align: center;
@@ -312,8 +312,8 @@ h2 {
 }
 
 #screen5 #title5 {
-	background-color: #56A5A3;
-	border: solid 0.3em white;
+	background-color: #3D5A5B;
+	border: solid 0.2em white;
 	/* height: 40vh; */
 	width: 45vw;
 	padding: 2em;
@@ -328,8 +328,8 @@ h2 {
 }
 
 #screen5 #content5 {
-	background-color: #56A5A3;
-	border: solid 0.3em white;
+	background-color: #3D5A5B;
+	border: solid 0.2em white;
 	width: 50vw;
 	padding: 2em;
 	text-align: center;
@@ -347,8 +347,8 @@ h2 {
 }
 
 #screen6 #title6 {
-	background-color: #56A5A3;
-	border: solid 0.3em white;
+	background-color: #3D5A5B;
+	border: solid 0.2em white;
 	/* height: 40vh; */
 	width: 45vw;
 	padding: 2em;
@@ -363,8 +363,8 @@ h2 {
 }
 
 #screen6 #content6 {
-	background-color: #56A5A3;
-	border: solid 0.3em white;
+	background-color: #3D5A5B;
+	border: solid 0.2em white;
 	width: 50vw;
 	padding: 2em;
 	text-align: center;
