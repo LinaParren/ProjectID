@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    
     <main>
 
         <section id="screen1">
@@ -60,17 +61,15 @@
 
                 <div id="content2">
                     <div id="screen21">
-                        <p>A tax treaty, also called double tax agreement (DTA) is a treaty or agreement between two
+                        <p>A <b>tax treaty</b>, also called double tax agreement (DTA) is a treaty or agreement between two
                             countries in which those countries agree on how to coordinate the levying of their taxes
                             with
                             the main objective of preventing international double taxation as well as tax avoidance. Tax
                             treaties are part of tax law and, more specifically, international tax law.</p>
-                        <img src="./images/image_load.png" alt="">
                     </div>
                     <br>
                     <div id="screen22">
-                        <img src="./images/image_load.png" alt="">
-                        <p>A tax haven is a country that offers foreign businesses minimal or no tax liability for their
+                        <p>A <b>tax haven</b> is a country that offers foreign businesses minimal or no tax liability for their
                             bank deposits in a politically and economically stable environment. In these tax havens it
                             is very easy to set up letterbox companies; these letterbox companies take advantage of the
                             tax
@@ -78,12 +77,11 @@
                     </div>
                     <br>
                     <div id="screen23">
-                        <p>A letterbox company is a company that usually only exists on paper. This means that there is
+                        <p>A <b>letterbox company</b> is a company that usually only exists on paper. This means that there is
                             a letterbox at the specified business location, but no office or business premises can be
                             found there. This letterbox company is managed in a completely different place. You won’t
                             find most letterbox companies in Germany or the USA. Rather, in most cases they have an
                             address abroad like Luxembourg, The Netherlands or countries outside of Europe.</p>
-                        <img src="./images/image_load.png" alt="">
                     </div>
                 </div>
             </div>
@@ -123,8 +121,26 @@
                             of money. That is why this problem needs to be solved.</p>
                     </div>
                     <br>
+
                     <div>
-                        <img src="./images/image_load.png" alt="">
+                        <section id="rates">
+                            <section>
+                                <button id="india" onclick="update(india)">India</button>
+                                <button id="italy" onclick="update(italy)">Italy</button>
+                                <button id="macao" onclick="update(macau)">Macau</button>
+                                <button id="mauritius" onclick="update(mauritius)">Mauritius</button>
+                                <button id="southafrica" onclick="update(southafrica)">South Africa</button>
+                                <button id="uae" onclick="update(uae)">UAE</button>
+                                <button id="vietnam" onclick="update(vietnam)">Vietnam</button>
+                                <button id="portugal" onclick="update(portugal)">Portugal</button>
+                                <button id="botswana" onclick="update(botswana)">Botswana</button>
+                            </section>
+        
+                            <div id="graph">
+                                <svg id="triangle-right"></svg>
+                                <svg id="ratesgraphic"></svg>
+                            </div>
+                        </section>
                     </div>
 
                 </div>
@@ -134,11 +150,11 @@
         <section id="screenmap">
             <div id="bodymap">
                 <div id="titlemap">
-                    <h2>Map</h2>
+                    <h2>Countries that take advantage of Mozambique's tax treaties</h2>
                 </div>
                 <div id="contentmap">
                     <svg id="map1" width="400" height="300"></svg>
-                    <svg id="map2" width="400" height="300"></svg>
+                    <svg id="legend" height=300 width=450></svg>
                 </div>
             </div>
         </section>
@@ -149,14 +165,12 @@
                     <h2>How much money is Mozambique missing out on?</h2>
                 </div>
                 <div id="content4">
-                    <p>Estimating the exact amount of money Mozambique loses to tax treaties that are not properly
-                        drafted is complicated, since the available data is often not correct nor complete. The
-                        situation is also worsened by Mozambique itself, as it is not carrying out regular assessments
-                        of the tax revenue that is lost to individual investments (which are benefitting from tax
-                        incentives). However, there is an estimated amount known about the losses in 2014. According to
-                        data presented by the IMF, Mozambique lost the equivalent of 3.3% of GDP in potential tax
-                        revenue to tax incentives. The same year, World Bank data says Mozambique’s annual GDP was
-                        $16.87bn. So, losses to tax incentives for that year would have been $556.71m.</p>
+                    <div id="screen43"></div>
+                    <div id="screen41">
+                        <div><p>Mozambique is missing out on 1.4 billion dollars over the course of the last 10 years! 583 hospitals could have been build with the 1.4 billion dollars.</p></div>
+                        <div><p>Mozambique currently has 1.597 hospitals which means that if 583 more hospitals had been built with the money they have been missing, the amount of hospitals to be found in Mozambique could have increased by more than 33%.</p></div>
+                    </div>
+                    <div id="screen42"></div>
                 </div>
             </div>
         </section>
@@ -195,11 +209,8 @@
         </section>
 
 
-        <!-- </article> -->
-
         <script src="https://d3js.org/d3.v6.js"></script>
-        <script src="./scripts/main.js" type="module"></script>
-        <!-- <script src="https://d3js.org/d3.v6.js"></script> -->
+        <script src="./scripts/main.js"></script>
 
     </main>
 </body>
