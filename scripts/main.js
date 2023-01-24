@@ -222,13 +222,13 @@ let observer5 = new IntersectionObserver(callback5);
 let observer6 = new IntersectionObserver(callback6);
 
 // Target the element you want to observe
-let target1 = document.querySelector('#screen2');
-let target2 = document.querySelector('#screen3');
-let target3 = document.querySelector('#screenmap');
-let targetmap = document.querySelector('#screen4');
-let target4 = document.querySelector('#screen5');
-let target5 = document.querySelector('#screen6');
-let target6 = document.querySelector('#screen1');
+let target1 = document.querySelector('#screen1');
+let target2 = document.querySelector('#screen2');
+let target3 = document.querySelector('#screen3');
+let targetmap = document.querySelector('#screenmap');
+let target4 = document.querySelector('#screen4');
+let target5 = document.querySelector('#screen5');
+let target6 = document.querySelector('#screen6');
 
 observer1.observe(target1);
 observer2.observe(target2);
@@ -241,8 +241,7 @@ observer6.observe(target6);
 function callback1(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            console.log('Element is in the viewport!');
-			body.style.backgroundImage = "url(../images/screen2.jpeg)"
+			body.style.backgroundImage = "url(../images/screen1.jpg)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
@@ -253,8 +252,7 @@ function callback1(entries, observer) {
 function callback2(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            console.log('Element is in the viewport!');
-			body.style.backgroundImage = "url(../images/screen3.jpeg)"
+			body.style.backgroundImage = "url(../images/screen2.jpg)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
@@ -265,8 +263,7 @@ function callback2(entries, observer) {
 function callback3(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            console.log('Element is in the viewport!');
-			body.style.backgroundImage = "url(../images/screen1.jpeg)"
+			body.style.backgroundImage = "url(../images/screen3.jpg)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
@@ -278,7 +275,6 @@ function callbackmap(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
 			console.log('kaas');
-            console.log('Element is in the viewport!');
 			body.style.backgroundColor = "red";
 			body.style.backgroundImage = '';
 			// body.style.backgroundImage = "url(../images/screen2.jpg)"
@@ -292,8 +288,7 @@ function callbackmap(entries, observer) {
 function callback4(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            console.log('Element is in the viewport!');
-			body.style.backgroundImage = "url(../images/screen4.jpeg)"
+			body.style.backgroundImage = "url(../images/screen4.jpg)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
@@ -304,8 +299,7 @@ function callback4(entries, observer) {
 function callback5(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            console.log('Element is in the viewport!');
-			body.style.backgroundImage = "url(../images/screen1.jpeg)"
+			body.style.backgroundImage = "url(../images/screen5.jpg)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
@@ -316,8 +310,7 @@ function callback5(entries, observer) {
 function callback6(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            console.log('Element is in the viewport!');
-			body.style.backgroundImage = "url(../images/screen1.jpeg)"
+			body.style.backgroundImage = "url(../images/banner1.jpeg)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";

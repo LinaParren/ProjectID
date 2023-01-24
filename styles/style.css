@@ -23,6 +23,7 @@ body {
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
+	transition: background-image 0.1s ease-in;
 }
 
 /* VIEW HEIGHT */
@@ -101,7 +102,8 @@ body {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 10vh;
+	padding-top: 25vh;
+	padding-bottom: 25vh;
 	margin-bottom: 100vh;
 }
 
@@ -127,6 +129,8 @@ body {
 	width: 50vw;
 	padding: 2em;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* #screen1 #buttons1 {
@@ -155,14 +159,14 @@ body {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 10vh;
+	padding-top: 25vh;
+	padding-bottom: 25vh;
 	margin-bottom: 100vh;
 }
 
 #screen2 #title2 {
 	background-color: #3D5A5B;
 	border: solid 0.2em white;
-	/* height: 40vh; */
 	width: 45vw;
 	padding: 2em;
 	margin-left: auto;
@@ -181,6 +185,8 @@ body {
 	width: 50vw;
 	padding: 2em;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #screen2 img {
@@ -210,14 +216,14 @@ body {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 10vh;
+	padding-top: 25vh;
+	padding-bottom: 25vh;
 	margin-bottom: 100vh;
 }
 
 #screen3 #title3 {
 	background-color: #3D5A5B;
 	border: solid 0.2em white;
-	/* height: 40vh; */
 	width: 45vw;
 	padding: 2em;
 	margin-left: auto;
@@ -230,12 +236,14 @@ body {
 	text-align: center;
 }
 
-#screen3 #content3 {
+#screen3 #content3 div {
 	background-color: #3D5A5B;
 	border: solid 0.2em white;
 	width: 50vw;
 	padding: 2em;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
@@ -245,14 +253,14 @@ body {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 10vh;
+	padding-top: 25vh;
+	padding-bottom: 25vh;
 	margin-bottom: 100vh;
 }
 
 #screenmap #titlemap {
 	background-color: #3D5A5B;
 	border: solid 0.2em white;
-	/* height: 40vh; */
 	width: 45vw;
 	padding: 2em;
 	margin-left: auto;
@@ -279,14 +287,14 @@ body {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 10vh;
+	padding-top: 25vh;
+	padding-bottom: 25vh;
 	margin-bottom: 100vh;
 }
 
 #screen4 #title4 {
 	background-color: #3D5A5B;
 	border: solid 0.2em white;
-	/* height: 40vh; */
 	width: 45vw;
 	padding: 2em;
 	margin-left: auto;
@@ -314,14 +322,14 @@ body {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 10vh;
+	padding-top: 25vh;
+	padding-bottom: 25vh;
 	margin-bottom: 100vh;
 }
 
 #screen5 #title5 {
 	background-color: #3D5A5B;
 	border: solid 0.2em white;
-	/* height: 40vh; */
 	width: 45vw;
 	padding: 2em;
 	margin-left: auto;
@@ -349,14 +357,14 @@ body {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 10vh;
+	padding-top: 25vh;
+	padding-bottom: 25vh;
 	margin-bottom: 100vh;
 }
 
 #screen6 #title6 {
 	background-color: #3D5A5B;
 	border: solid 0.2em white;
-	/* height: 40vh; */
 	width: 45vw;
 	padding: 2em;
 	margin-left: auto;
