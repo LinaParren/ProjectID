@@ -1,0 +1,62 @@
+[
+    {
+        "country": "India",
+        "dividends": "7.5",
+        "interests": "10",
+        "royalties": "10"
+    },
+    {
+        "country": "Italy",
+        "dividends": "15",
+        "interests": "10",
+        "royalties": "10"
+    },
+    {
+        "country": "Macau",
+        "dividends": "10",
+        "interests": "10",
+        "royalties": "10"
+    },
+    {
+        "country": "Mauritius",
+        "dividends": "8",
+        "interests": "8",
+        "royalties": "5"
+    },
+    {
+        "country": "South Africa",
+        "dividends": "8",
+        "interests": "8",
+        "royalties": "5"
+    },
+    {
+        "country": "UAE",
+        "dividends": "0",
+        "interests": "0",
+        "royalties": "0"
+    },
+    {
+        "country": "Vietnam",
+        "dividends": "10",
+        "interests": "10",
+        "royalties": "10"
+    },
+    {
+        "country": "Portugal",
+        "dividends": "10",
+        "interests": "10",
+        "royalties": "0"
+    },
+    {
+        "country": "Botswana",
+        "dividends": "0",
+        "interests": "10",
+        "royalties": "10"
+    },
+    {
+        "country": "National rates[1]",
+        "dividends": "20",
+        "interests": "20",
+        "royalties": "20"
+    }
+]

@@ -1,16 +1,131 @@
-// DATA 1.4 LOSS
+const india = [
+   {group: "Dividends", value: 7.5},
+   {group: "Interests", value: 10},
+   {group: "Royalties", value: 10}
+];
 
-fetch('https://opensheet.elk.sh/1ruaa1MeV_-utrSGHXwmI_JoY_64e90BBS_UswFq9vmE/loss')
-	.then(res => res.json())
-	.then(data => {
-		const dataResults = []
+const italy = [
+	{group: "Dividends", value: 15},
+	{group: "Interests", value: 10},
+	{group: "Royalties", value: 10}
+];
 
-		data.forEach(item => {
-            dataResults.push({year: item["YEAR"], revenue: item["Total lost revenue"]})
-        })
+const macau = [
+	{group: "Dividends", value: 10},
+	{group: "Interests", value: 10},
+	{group: "Royalties", value: 10}
+];
 
-		console.log(dataResults)
-});
+const mauritius = [
+	{group: "Dividends", value: 8},
+	{group: "Interests", value: 8},
+	{group: "Royalties", value: 5}
+];
+
+const southafrica = [
+	{group: "Dividends", value: 8},
+	{group: "Interests", value: 8},
+	{group: "Royalties", value: 5}
+];
+
+const uae = [
+	{group: "Dividends", value: 0},
+	{group: "Interests", value: 0},
+	{group: "Royalties", value: 0}
+];
+
+const vietnam = [
+	{group: "Dividends", value: 10},
+	{group: "Interests", value: 10},
+	{group: "Royalties", value: 10}
+];
+
+const portugal = [
+	{group: "Dividends", value: 10},
+	{group: "Interests", value: 10},
+	{group: "Royalties", value: 0}
+];
+
+const botswana = [
+	{group: "Dividends", value: 0},
+	{group: "Interests", value: 10},
+	{group: "Royalties", value: 10}
+];
+
+const margin = {top: 30, right: 30, bottom: 70, left: 60},
+    width2 = 460 - margin.left - margin.right,
+    height2 = 400 - margin.top - margin.bottom;
+
+const svg2 = d3.select("#ratesgraphic")
+    .attr("width", width2 + margin.left + margin.right)
+    .attr("height", height2 + margin.top + margin.bottom)
+	.append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+const x = d3.scaleLinear()
+  .domain([0, 20])
+  .range([ 0, width2])
+svg2.append("g")
+  .attr("transform", `translate(0,${height2})`)
+  .call(d3.axisBottom(x))
+
+const y = d3.scaleBand()
+  .range([ height2, 0 ])
+  .domain(india.map(d => d.group))
+  .padding(0.2);
+svg2.append("g")
+  .attr("class", "myYaxis")
+  .call(d3.axisLeft(y));
+
+function update(data) {
+
+  var u = svg2.selectAll("rect")
+    .data(data)
+
+  u
+    .join("rect")
+    .transition()
+    .duration(1000)
+      .attr("x", 0)
+      .attr("y", d => y(d.group))
+      .attr("height", y.bandwidth())
+      .attr("width", function(d) {
+      return x(d.value);
+    })
+  svg2.select("rect:nth-of-type(3)")
+  .attr("fill", '#007368')
+  svg2.select("rect:nth-of-type(2)")
+  .attr("fill", 'black')
+  svg2.select("rect:nth-of-type(1)")
+  .attr("fill", '#FFE200')
+  svg2.append("rect")
+  .attr("x", 0)
+  .attr("y", 18.75)
+  .attr("height", 75)
+  .attr("width", 370)
+  .attr("fill", "none")
+  .attr("stroke", "#007368")
+
+  svg2.append("rect")
+  .attr("x", 0)
+  .attr("y", 112.5)
+  .attr("height", 75)
+  .attr("width", 370)
+  .attr("fill", "none")
+  .attr("stroke", "black")
+
+  svg2.append("rect")
+  .attr("x", 0)
+  .attr("y", 206.25)
+  .attr("height", 75)
+  .attr("width", 370)
+  .attr("fill", "none")
+  .attr("stroke", "#FFE200")
+
+
+}
+
+update(india)
 
 // MAP 1
 
@@ -24,6 +139,8 @@ const projection = d3.geoNaturalEarth1()
     .translate([width / 2.20, height / 1.65])
 
 const dtacountries = ["Portugal", "Mauritius", "Italy", "United Arab Emirates", "South Africa", "Macao", "India", "Vietnam"]
+const forcecountries = ["Botswana", "Ethiopia"]
+const negotiationscountrys = ["Netherlands", "Turkey", "Seychelles"]
 
 // d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson").then( function(data) {
 
@@ -35,7 +152,7 @@ d3.json("../map.json").then( function(data) {
 	.style("position", "absolute")
 	.style("opacity", 0)
 	.style("color", "white")
-	.style("background-color", "red")
+	.style("background-color", "black")
 	.style("padding", "1em")
 	.style("border", "2px black solid")
 	.style("font-weight", "bold")
@@ -45,10 +162,18 @@ d3.json("../map.json").then( function(data) {
 		if(dtacountries.includes(d.properties.name)) {
 				Tooltip.style("opacity", 1)
 				d3.select(this)
-					.style("fill", "#00cfb7")
+					.style("fill", "white")
 				d3.select(".tooltip")
-				// .html(d.properties.name + "<br>/</br>",d.properties.test)
 				.html(`<h5>${d.properties.name}</h5><h6>Total loss: $${d.properties.total}</h6>`)
+			} else {
+				console.log("fout")
+			}
+		if(forcecountries.includes(d.properties.name) || negotiationscountrys.includes(d.properties.name) || d.properties.name == "Mozambique") {
+				Tooltip.style("opacity", 1)
+				d3.select(this)
+					.style("fill", "white")
+				d3.select(".tooltip")
+				.html(`<h5>${d.properties.name}</h5>`)
 			} else {
 				console.log("fout")
 			}
@@ -63,7 +188,22 @@ d3.json("../map.json").then( function(data) {
     function mouseOut (e, d) {
 		if(dtacountries.includes(d.properties.name)) {
 			d3.select(this)
-				.style("fill", "red")
+				.style("fill", "#E5002C")
+		}
+		if(forcecountries.includes(d.properties.name)) {
+			d3.select(this)
+				.style("fill", "#FFE200")
+		} 
+		if(negotiationscountrys.includes(d.properties.name)) {
+			d3.select(this)
+				.style("fill", "#007368")
+		}
+		if(d.properties.name == "Mozambique") {
+			d3.select(this)
+				.style("fill", "black")
+		}
+		else {
+			console.log("fout")
 		}
 		d3.select(".tooltip")
 			.style("opacity", 0)
@@ -76,153 +216,35 @@ d3.json("../map.json").then( function(data) {
             .attr("d", d3.geoPath()
             .projection(projection)
             )
-            // .style("stroke", "#3D5A5B")
 			.attr("fill", function (d) {
-				// Hier dataset
 				if(dtacountries.includes(d.properties.name)) {
-				return "red"
-				} else {
-				   return "white"
+					return "#E5002C"
+				} 
+				if(forcecountries.includes(d.properties.name)) {
+					return "#FFE200"
+				}
+				if(negotiationscountrys.includes(d.properties.name)) {
+					return "#007368"
+				}
+				if(d.properties.name == "Mozambique") {
+					return "black"
+				}
+				else {
+				   return "#3D5A5B"
 			   }
 		   })
-	// 	   .attr("fill", function (d) {
-	// 		// Hier dataset
-	// 		if((d.properties.name == "Mauritius")) {
-	// 		return "blue"
-	// 		} else {
-	// 		   return "grey"
-	// 	   }
-	//    })
+		   .style("stroke", "white")
+		   .style("stroke-width", 0.5)
 		   .on("mouseover touchstart", mouseOver )
 		   .on("mousemove", mouseMove)
            .on("mouseout", mouseOut)
-
-		//    svg.selectAll("myPath")
-		//    .join("path")
-		// 	 .attr("d", function(d){ return path(d)})
-		// 	 .style("fill", "none")
-		// 	 .style("stroke", "blue")
-		// 	 .style("stroke-width", 3)
 })
 
-// MAP 2
+var svg3 = d3.select("#legend")
 
-// const svg2 = d3.select("#map2"),
-//   width2 = +svg2.attr("width"),
-//   height2 = +svg2.attr("height");
-
-// const path = d3.geoPath();
-// const projection2 = d3.geoMercator()
-//   .scale(70)
-//   .center([0,20])
-//   .translate([width2 / 2, height2 / 2]);
-
-// let data = new Map()
-// const colorScale = d3.scaleOrdinal().domain(data)
-// .range(["#e30513", "#970613", "#f18188", "#f9cbce"])
-// svg2.selectAll(".firstrow").data(data).enter().append("circle").attr("cx", function(d,i){return 30 + i*60}).attr("cy", 50).attr("r", 19).attr("fill", function(d){return myColor(d) })
-
-
-// // d3.scaleThreshold()
-// //   .domain([100000, 1000000, 10000000, 30000000, 100000000, 500000000])
-// //   .range(d3.schemeReds[7]);
-
-// Promise.all([
-// d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
-
-// // Hier dataset
-// d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world_population.csv", function(d) {
-//     data.set(d.code, +d.pop)
-// })
-// ]).then(function(loadData){
-//     let topo = loadData[0]
-
-//   svg2.append("g")
-//     .selectAll("path")
-//     .data(topo.features)
-//     .join("path")
-//       .attr("d", d3.geoPath()
-//         .projection(projection2)
-//       )
-//       .attr("fill", function (d) {
-//         d.total = data.get(d.id) || 0;
-//         return colorScale(d.total);
-//       })
-// })
-
-// LINA
-
-const screen1 = document.querySelector("#screen1");
-const screen2 = document.querySelector("#screen2");
-const screen3 = document.querySelector("#screen3");
-const screen4 = document.querySelector("#screen4");
-const screen5 = document.querySelector("#screen5");
-
-
-const button4 = document.querySelector("#time4");
-button4.addEventListener("click", chooseTime4);
-const button6 = document.querySelector("#time6");
-button6.addEventListener("click", chooseTime6);
-const button10 = document.querySelector("#time10");
-button10.addEventListener("click", chooseTime10);
-const button13 = document.querySelector("#time13");
-button13.addEventListener("click", chooseTime13);
-
-
-function chooseTime4() {
-	screen2.classList.remove("show");
-	screen3.classList.remove("show");
-	screen4.classList.remove("show");
-	screen5.classList.remove("show");
-	screen2.classList.add("show");
-	screen3.classList.add("hide");
-	screen4.classList.add("hide");
-	screen5.classList.add("hide");
-}
-
-function chooseTime6() {
-	screen2.classList.remove("show");
-	screen3.classList.remove("show");
-	screen4.classList.remove("show");
-	screen5.classList.remove("show");
-	screen2.classList.add("show");
-	screen3.classList.add("show");
-	screen4.classList.add("hide");
-	screen5.classList.add("hide");
-}
-
-function chooseTime10() {
-	screen2.classList.remove("show");
-	screen3.classList.remove("show");
-	screen4.classList.remove("show");
-	screen5.classList.remove("show");
-	screen2.classList.add("show");
-	screen3.classList.add("show");
-	screen4.classList.add("show");
-	screen5.classList.add("hide");
-}
-
-function chooseTime13() {
-	screen2.classList.remove("show");
-	screen3.classList.remove("show");
-	screen4.classList.remove("show");
-	screen5.classList.remove("show");
-	screen2.classList.add("show");
-	screen3.classList.add("show");
-	screen4.classList.add("show");
-	screen5.classList.add("show");
-}
-	
-
-// -------------------------------------
-
-
-function myFunction() {
-	var popup = document.getElementById("myPopup");
-	popup.classList.toggle("show");
-}
-
-
-// -------------------------------------
-
-
+svg3.append("circle").attr("cx",10).attr("cy",10).attr("r", 6).style("fill", "#E5002C")
+svg3.append("circle").attr("cx",10).attr("cy",40).attr("r", 6).style("fill", "#FFE200")
+svg3.append("circle").attr("cx",10).attr("cy",70).attr("r", 6).style("fill", "#007368")
+svg3.append("text").attr("x", 30).attr("y", 10).text("Tax treaty").style("font-size", "15px").style("fill", "#fff").attr("alignment-baseline","middle")
+svg3.append("text").attr("x", 30).attr("y", 40).text("Not yet ratified").style("font-size", "15px").style("fill", "#fff").attr("alignment-baseline","middle")
+svg3.append("text").attr("x", 30).attr("y", 70).text("In negotiation").style("font-size", "15px").style("fill", "#fff").attr("alignment-baseline","middle")
