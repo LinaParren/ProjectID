@@ -241,7 +241,7 @@ observer6.observe(target6);
 function callback1(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-			body.style.backgroundImage = "url(../public/images/screen1.jpg)"
+			body.style.backgroundImage = "url(../images/screen1.jpg)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
@@ -252,7 +252,7 @@ function callback1(entries, observer) {
 function callback2(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-			body.style.backgroundImage = "url(../public/images/screen2.jpg)"
+			body.style.backgroundImage = "url(../images/screen2.jpg)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
@@ -263,7 +263,7 @@ function callback2(entries, observer) {
 function callback3(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-			body.style.backgroundImage = "url(../public/images/screen3.jpg)"
+			body.style.backgroundImage = "url(../images/screen3.jpg)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
@@ -288,7 +288,7 @@ function callbackmap(entries, observer) {
 function callback4(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-			body.style.backgroundImage = "url(../public/images/screen4.jpg)"
+			body.style.backgroundImage = "url(../images/screen4.jpg)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
@@ -299,7 +299,7 @@ function callback4(entries, observer) {
 function callback5(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-			body.style.backgroundImage = "url(../public/images/screen5.jpg)"
+			body.style.backgroundImage = "url(../images/screen5.jpg)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
@@ -310,7 +310,7 @@ function callback5(entries, observer) {
 function callback6(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-			body.style.backgroundImage = "url(../public/images/banner1.jpeg)"
+			body.style.backgroundImage = "url(../images/banner1.jpeg)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
