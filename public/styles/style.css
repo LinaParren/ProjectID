@@ -183,7 +183,7 @@ body {
 
 /* SCREEN 3 */
 #screen3 #body3 {
-	width: 80vw;
+	width: 90vw;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 25vh;
@@ -208,12 +208,23 @@ body {
 
 #screen3 #content3 #text3 {
 	background-color: #3D5A5B;
-	border: solid 0.2em white;
+	border: solid 0.1em white;
 	width: 50vw;
-	padding: 2em;
+	padding: 1em;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 5%;
+}
+
+#screen3 #content3 #text31 {
+	background-color: #3D5A5B;
+	border: solid 0.1em white;
+	padding: 1em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
 }
 
 /* -------- */
@@ -222,16 +233,24 @@ body {
 	margin-top: 100vh;
 	background-color: #3D5A5B;
 	border: solid 0.2em white;
-	width: 50vw;
 	padding: 2em;
-	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+#visualisation #infotext {
+	display: flex;
+	flex-direction: column;
+	width: 30vw;
 }
 
 #rates {
 	display: flex;
-	flex-direction: row;
+	align-items: center;
+	padding: 2em;
+	width: 45vw;
 }
 
 #rates #buttons {
@@ -439,6 +458,10 @@ body {
 #screen5 #title5 h2 {
 	font-size: 2.5em;
 	text-align: center;
+}
+
+#screen5 #content5 #me {
+	margin-bottom: 5vh;
 }
 
 #screen5 #content5 #buttons5 {
