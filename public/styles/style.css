@@ -27,7 +27,6 @@ body {
 	width: 2vw;
 	height: 2vw;
 	border-radius: 50%;
-	position: fixed;
 }
 
 
@@ -353,7 +352,7 @@ body {
 #screenmap #contentmap #legend {
 	display: flex;
 	justify-content: center;
-	width: 10%;
+	width: 20%;
 }
 
 #legend text {
@@ -442,7 +441,19 @@ body {
 	text-align: center;
 }
 
-#screen5 #content5 div {
+#screen5 #content5 #buttons5 {
+	background-color: #3D5A5B;
+	border: solid 0.2em white;
+	width: 50vw;
+	padding: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#screen5 #content5 #text5 {
 	background-color: #3D5A5B;
 	border: solid 0.2em white;
 	width: 50vw;
@@ -452,6 +463,24 @@ body {
 	margin-bottom: 20vh;
 }
 
+#buttons5 button {
+	display: flex;
+	background: white;
+	color: #3D5A5B;
+	border: none;
+	padding: 0.5em;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+#buttons5 button:focus {
+	display: flex;
+	background: #3D5A5B;
+	border: white solid 0.1em;
+	color: white;
+}
 
 
 /* SCREEN 6 */
