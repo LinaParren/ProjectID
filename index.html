@@ -123,10 +123,11 @@
                     <br>
 
                     <div id="visualisation">
+                        <div>WHT rates on interest, dividend and royalties in Mozambique’s DTAs compared to its domestic tax law (20%)</div>
                         <div id="rates">
                             <div id="buttons">
                                 <p>Countries</p>
-                                <button id="india" onclick="update(india)">India</button>
+                                <button id="india" onclick="update(india)" autofocus>India</button>
                                 <button id="italy" onclick="update(italy)">Italy</button>
                                 <button id="macao" onclick="update(macau)">Macau</button>
                                 <button id="mauritius" onclick="update(mauritius)">Mauritius</button>
@@ -138,7 +139,10 @@
                             </div>
         
                             <div id="graph">
+                                
                                 <svg id="triangle-right"></svg>
+                                <svg id="rectangle-white"></svg>
+                                <svg id="rectangle-white2"></svg>
                                 <svg id="ratesgraphic"></svg>
                             </div>
                         </div>
@@ -155,7 +159,7 @@
                 </div>
                 <div id="contentmap">
                     <svg id="map1" width="400" height="300"></svg>
-                    <svg id="legend" height=300 width=450></svg>
+                    <svg id="legend" height=100 width=150></svg>
                 </div>
             </div>
         </section>

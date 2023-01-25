@@ -93,6 +93,11 @@ const india = [
  svg2.append("g")
    .attr("transform", `translate(0,${height2})`)
    .call(d3.axisBottom(x))
+   .append("text")
+   .html("Percentage")
+   .style("fill", "white")
+   .attr("y", "40")
+   .attr("x", "185")
  
  const y = d3.scaleBand()
    .range([ height2, 0 ])
@@ -189,7 +194,7 @@ const india = [
 				 d3.select(this)
 					 .style("fill", "white")
 				 d3.select(".tooltip")
-				 .html(`<h5>${d.properties.name}</h5><h6>Total loss: $${d.properties.total}</h6>`)
+				 .html(`<h5>${d.properties.name}</h5><h6>Total loss as result of DTA: $${d.properties.total}</h6>`)
 			 } else {
 				 console.log("fout")
 			 }
