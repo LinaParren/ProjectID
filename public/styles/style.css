@@ -200,7 +200,7 @@ body {
 	text-align: center;
 }
 
-#screen3 #content3 div {
+#screen3 #content3 #text3 {
 	background-color: #3D5A5B;
 	border: solid 0.2em white;
 	width: 50vw;
@@ -212,21 +212,31 @@ body {
 
 /* -------- */
 
-#screen3 #content3 #visualisation {
+#visualisation {
 	margin-top: 100vh;
+	background-color: #3D5A5B;
+	border: solid 0.2em white;
+	width: 50vw;
+	padding: 2em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#legend text {
-	color: white;
+#rates {
+	display: flex;
+	flex-direction: row;
 }
 
-#rates section {
+#rates #buttons {
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: column;
 	gap: 0.5em;
 }
 
-#content3 #rates #graph {
+#rates #graph {
+	display: flex;
 	background-color: none;
 	border: none;
 	margin-left: auto;
@@ -234,9 +244,8 @@ body {
 	padding: 0;
 }
 
-/* ------ */
-
 #rates button {
+	display: flex;
 	background: white;
 	color: #3D5A5B;
 	border: none;
@@ -300,6 +309,10 @@ body {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	text-align: center;
+}
+
+#legend text {
+	color: white;
 }
 
 
