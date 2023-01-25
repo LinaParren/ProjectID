@@ -169,8 +169,6 @@ const india = [
 					 .style("fill", "white")
 				 d3.select(".tooltip")
 				 .html(`<h5>${d.properties.name}</h5><h6>Total loss as result of DTA: $${d.properties.total}</h6>`)
-			 } else {
-				 console.log("fout")
 			 }
 		 if(forcecountries.includes(d.properties.name) || negotiationscountrys.includes(d.properties.name) || d.properties.name == "Mozambique") {
 				 Tooltip.style("opacity", 1)
@@ -178,8 +176,6 @@ const india = [
 					 .style("fill", "white")
 				 d3.select(".tooltip")
 				 .html(`<h5>${d.properties.name}</h5>`)
-			 } else {
-				 console.log("fout")
 			 }
 	 }
  
@@ -205,9 +201,6 @@ const india = [
 		 if(d.properties.name == "Mozambique") {
 			 d3.select(this)
 				 .style("fill", "black")
-		 }
-		 else {
-			 console.log("fout")
 		 }
 		 d3.select(".tooltip")
 			 .style("opacity", 0)
@@ -396,7 +389,6 @@ function callback3(entries, observer) {
 function callbackmap(entries, observer) {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
-			console.log('kaas');
 			body.style.backgroundImage = '';
 			body.style.backgroundColor = "#3D5A5B";
 		}
@@ -418,7 +410,7 @@ function callback4(entries, observer) {
 function callback5(entries, observer) {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
-			body.style.backgroundImage = "url(../images/screen5.jpg)"
+			body.style.backgroundImage = "url(../images/screen6.png)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
@@ -429,7 +421,7 @@ function callback5(entries, observer) {
 function callback6(entries, observer) {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
-			body.style.backgroundImage = "url(../images/screen6.png)"
+			body.style.backgroundImage = "url(../images/screen5.jpg)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
