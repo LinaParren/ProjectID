@@ -526,23 +526,8 @@ function callback42(entries, observer) {
 }
 
 
+// ------------------------------
 
-
-// const knopNL = document.querySelector("#knopnederlands");
-// knopNL.addEventListener("click", chooseNL);
-// const knopEN = document.querySelector("#knopengels");
-// knopEN.addEventListener("click", chooseEN);
-
-
-// function chooseNL() {
-// 	knopNL.style.display = "none";
-//     knopEN.style.display = "block";
-// }
-
-// function chooseEN() {
-// 	knopEN.style.display = "none";
-//     knopNL.style.display = "block";
-// }
 
 var knopNL = document.getElementById("#knopnederland");
 var knopEN = document.getElementById("#knopengels");
@@ -555,4 +540,47 @@ function switchTaal() {
     knopEN.style.display = "block";
     knopNL.style.display = "none";
   }
+}
+
+
+// ------------------------------
+
+
+// var knopIk = document.getElementById("#meknop");
+// var knopGovern = document.getElementById("#governmentknop");
+// var tekstIk = document.getElementById("#me");
+// var tekstGovern = document.getElementById("#government");
+
+  
+// function switchSolution() {  
+//   if (tekstIk.style.display === "none") { 
+// 	tekstIk.style.display = "block";
+//     tekstGovern.style.display = "none"; 
+//   } else {
+//     tekstIk.style.display = "none";
+//     tekstGovern.style.display = "block";
+//   }
+// }
+
+
+const tekstMe = document.querySelector("#me");
+const tekstGovern = document.querySelector("#government");
+
+const knopMe = document.querySelector("#meknop");
+knopMe.addEventListener("click", chooseMe);
+const knopGovern = document.querySelector("#governmentknop");
+knopGovern.addEventListener("click", chooseGovernemnt);
+
+function chooseMe() {
+	tekstMe.classList.remove("show");
+	tekstGovern.classList.remove("show");
+	tekstMe.classList.add("show");
+	tekstGovern.classList.add("hide");
+}
+
+function chooseGovernemnt() {
+	tekstGovern.classList.remove("show");
+	tekstMe.classList.remove("show");	
+	tekstGovern.classList.add("show");
+	tekstMe.classList.add("hide");
 }
