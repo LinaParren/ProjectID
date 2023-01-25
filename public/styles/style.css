@@ -265,13 +265,13 @@ body {
 #triangle-right {
 	opacity: 75%;
 	position: absolute;
-	margin-top: 2.7em;
+	margin-top: 2.9em;
 	margin-left: 3.7em;
 	width: 0;
 	height: 0;
-	border-top: 135px solid transparent;
+	border-top: 133px solid transparent;
 	border-left: 100px solid #E5002C;
-	border-bottom: 135px solid transparent;
+	border-bottom: 133px solid transparent;
 }
 
 #rectangle-white {
