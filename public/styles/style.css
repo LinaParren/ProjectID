@@ -262,14 +262,39 @@ body {
 }
 
 #triangle-right {
+	opacity: 75%;
 	position: absolute;
-	margin-top: 15vh;
-	margin-left: 3.73em;
+	margin-top: 2.7em;
+	margin-left: 3.7em;
 	width: 0;
-	height: 10;
+	height: 0;
 	border-top: 135px solid transparent;
 	border-left: 100px solid #E5002C;
 	border-bottom: 135px solid transparent;
+}
+
+#rectangle-white {
+	z-index: -1;
+	position: absolute;
+	margin-top: 7.75em;
+	margin-left: 3.7em;
+	width: 23.2em;
+	height: 1.1em;
+	background-color: white;
+}
+
+#rectangle-white2 {
+	z-index: -1;
+	position: absolute;
+	margin-top: 13.65em;
+	margin-left: 3.7em;
+	width: 23.2em;
+	height: 1.1em;
+	background-color: white;
+}
+
+#graphtitle {
+	font-size: 1.5em;
 }
 
 

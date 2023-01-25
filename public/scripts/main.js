@@ -93,6 +93,11 @@ const india = [
  svg2.append("g")
    .attr("transform", `translate(0,${height2})`)
    .call(d3.axisBottom(x))
+   .append("text")
+   .html("Percentage")
+   .style("fill", "white")
+   .attr("y", "40")
+   .attr("x", "185")
  
  const y = d3.scaleBand()
    .range([ height2, 0 ])
@@ -189,7 +194,7 @@ const india = [
 				 d3.select(this)
 					 .style("fill", "white")
 				 d3.select(".tooltip")
-				 .html(`<h5>${d.properties.name}</h5><h6>Total loss: $${d.properties.total}</h6>`)
+				 .html(`<h5>${d.properties.name}</h5><h6>Total loss as result of DTA: $${d.properties.total}</h6>`)
 			 } else {
 				 console.log("fout")
 			 }
@@ -338,7 +343,7 @@ const india = [
 // 	screen4.classList.add("show");
 // 	screen5.classList.add("show");
 // }
-	
+
 
 // -------------------------------------
 
@@ -380,82 +385,82 @@ observer5.observe(target5);
 observer6.observe(target6);
 
 function callback1(entries, observer) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
 			body.style.backgroundImage = "url(../images/screen1.png)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
-        }
-    });
+		}
+	});
 }
 
 function callback2(entries, observer) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
 			body.style.backgroundImage = '';
 			body.style.backgroundColor = "#3D5A5B";
 			// body.style.backgroundImage = "url(../images/screen21.png)"
 			// body.style.backgroundSize = "cover";
 			// body.style.backgroundRepeat = "no-repeat";
 			// body.style.backgroundAttachment = "fixed";
-        } 
-    });
+		}
+	});
 }
 
 function callback3(entries, observer) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
 			body.style.backgroundImage = "url(../images/screen3.jpg)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
-        } 
-    });
+		}
+	});
 }
 
 function callbackmap(entries, observer) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
 			console.log('kaas');
 			body.style.backgroundImage = '';
 			body.style.backgroundColor = "#3D5A5B";
-        } 
-    });
+		}
+	});
 }
 
 function callback4(entries, observer) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
 			body.style.backgroundColor = "#3D5A5B";
 			// body.style.backgroundImage = "url(../images/screen4.jpg)"
 			// body.style.backgroundSize = "cover";
 			// body.style.backgroundRepeat = "no-repeat";
 			// body.style.backgroundAttachment = "fixed";
-        } 
-    });
+		}
+	});
 }
 
 function callback5(entries, observer) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
 			body.style.backgroundImage = "url(../images/screen5.png)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
-        } 
-    });
+		}
+	});
 }
 
 function callback6(entries, observer) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
 			body.style.backgroundImage = "url(../images/banner1.jpeg)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
-        } 
-    });
+		}
+	});
 }
 
 
@@ -477,36 +482,36 @@ observer22.observe(target22);
 observer23.observe(target23);
 
 function callback21(entries, observer) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
 			body.style.backgroundImage = "url(../images/screen21.png)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
-        }
-    });
+		}
+	});
 }
 
 function callback22(entries, observer) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
 			body.style.backgroundImage = "url(../images/screen22.png)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
-        } 
-    });
+		}
+	});
 }
 
 function callback23(entries, observer) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
 			body.style.backgroundImage = "url(../images/screen23.png)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
-        } 
-    });
+		}
+	});
 }
 
 
@@ -525,23 +530,23 @@ observer41.observe(target41);
 observer42.observe(target42);
 
 function callback41(entries, observer) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
 			body.style.backgroundImage = "url(../images/screen41.png)"
-			body.style.backgroundSize = "cover";
+			body.style.backgroundSize = "contain";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
-        }
-    });
+		}
+	});
 }
 
 function callback42(entries, observer) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
 			body.style.backgroundImage = "url(../images/screen42.png)"
-			body.style.backgroundSize = "cover";
+			body.style.backgroundSize = "contain";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
-        } 
-    });
+		}
+	});
 }
