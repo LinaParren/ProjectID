@@ -212,6 +212,10 @@ body {
 
 /* -------- */
 
+#screen3 #content3 #visualisation {
+	margin-top: 100vh;
+}
+
 #legend text {
 	color: white;
 }
@@ -222,12 +226,17 @@ body {
 	gap: 0.5em;
 }
 
-/* #content3 div #rates section #graph {
+#content3 #rates #graph {
 	background-color: none;
 	border: none;
-} */
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
 
-#rates section button {
+/* ------ */
+
+#rates button {
 	background: white;
 	color: #3D5A5B;
 	border: none;
@@ -237,7 +246,7 @@ body {
 	outline: inherit;
 }
 
-#rates section button:focus {
+#rates button:focus {
 	background: #3D5A5B;
 	border: white solid 1px;
 	color: white;
@@ -245,10 +254,10 @@ body {
 
 #triangle-right {
 	position: absolute;
-	margin-top: 2.8em;
+	margin-top: 15vh;
 	margin-left: 3.73em;
 	width: 0;
-	height: 100;
+	height: 10;
 	border-top: 135px solid transparent;
 	border-left: 100px solid #E5002C;
 	border-bottom: 135px solid transparent;
