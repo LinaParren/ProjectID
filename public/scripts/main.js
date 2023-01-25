@@ -1,28 +1,4 @@
-// import '../styles/style.css'
-// import * as d3 from 'd3';
-// import { style } from 'd3';
-
-
-// fetch('https://opensheet.elk.sh/1ruaa1MeV_-utrSGHXwmI_JoY_64e90BBS_UswFq9vmE/loss')
-// 	.then(res => res.json())
-// 	.then(data => {
-// 		const dataResults = []
-
-// 		data.forEach(item => {
-//             dataResults.push({year: item["YEAR"], revenue: item["Total lost revenue"]})
-//         })
-
-// 		console.log(dataResults)
-// });
-
-
-
-// -------------------------------------
-
-
-
 // GRAPH
-
 const india = [
 	{group: "Dividends", value: 7.5},
 	{group: "Interests", value: 10},
@@ -156,9 +132,9 @@ const india = [
  }
  
  update(india)
- 
+
+
  // MAP 1
- 
  const width = 900
  const height = 450 
  
@@ -171,9 +147,7 @@ const india = [
  const dtacountries = ["Portugal", "Mauritius", "Italy", "United Arab Emirates", "South Africa", "Macao", "India", "Vietnam"]
  const forcecountries = ["Botswana", "Ethiopia"]
  const negotiationscountrys = ["Netherlands", "Turkey", "Seychelles"]
- 
- // d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson").then( function(data) {
- 
+  
  d3.json("../map.json").then( function(data) {
  
 	 const Tooltip = d3.select("body")
@@ -444,7 +418,7 @@ function callback4(entries, observer) {
 function callback5(entries, observer) {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
-			body.style.backgroundImage = "url(../images/screen5.png)"
+			body.style.backgroundImage = "url(../images/screen5.jpg)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
@@ -455,7 +429,7 @@ function callback5(entries, observer) {
 function callback6(entries, observer) {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
-			body.style.backgroundImage = "url(../images/banner1.jpeg)"
+			body.style.backgroundImage = "url(../images/screen6.png)"
 			body.style.backgroundSize = "cover";
 			body.style.backgroundRepeat = "no-repeat";
 			body.style.backgroundAttachment = "fixed";
@@ -549,4 +523,36 @@ function callback42(entries, observer) {
 			body.style.backgroundAttachment = "fixed";
 		}
 	});
+}
+
+
+
+
+// const knopNL = document.querySelector("#knopnederlands");
+// knopNL.addEventListener("click", chooseNL);
+// const knopEN = document.querySelector("#knopengels");
+// knopEN.addEventListener("click", chooseEN);
+
+
+// function chooseNL() {
+// 	knopNL.style.display = "none";
+//     knopEN.style.display = "block";
+// }
+
+// function chooseEN() {
+// 	knopEN.style.display = "none";
+//     knopNL.style.display = "block";
+// }
+
+var knopNL = document.getElementById("#knopnederland");
+var knopEN = document.getElementById("#knopengels");
+  
+function switchTaal() {  
+  if (knopNL.style.display === "none") {  
+    knopEN.style.display = "none";
+    knopNL.style.display = "block";
+  } else {
+    knopEN.style.display = "block";
+    knopNL.style.display = "none";
+  }
 }

@@ -23,6 +23,13 @@ body {
 	transition: background-image 0.1s ease-in;
 }
 
+#knopnederlands, #knopengels {
+	width: 2vw;
+	height: 2vw;
+	border-radius: 50%;
+	position: fixed;
+}
+
 
 /* HIDE AND SHOW SECTIONS */
 .hide {
@@ -334,6 +341,19 @@ body {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	text-align: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#screenmap #contentmap #map1 {
+	display: flex;
+}
+
+#screenmap #contentmap #legend {
+	display: flex;
+	justify-content: center;
+	width: 10%;
 }
 
 #legend text {
@@ -381,7 +401,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5vh;
-	margin-bottom: 30vh;
+	margin-bottom: 100vh;
 }
 
 #screen4 #content4 #screen42 {
@@ -422,12 +442,14 @@ body {
 	text-align: center;
 }
 
-#screen5 #content5 {
+#screen5 #content5 div {
 	background-color: #3D5A5B;
 	border: solid 0.2em white;
 	width: 50vw;
 	padding: 2em;
-	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20vh;
 }
 
 
@@ -457,12 +479,15 @@ body {
 	text-align: center;
 }
 
-#screen6 #content6 {
+#screen6 #content6 div {
 	background-color: #3D5A5B;
 	border: solid 0.2em white;
 	width: 50vw;
 	padding: 2em;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20vh;
 }
 
 
