@@ -127,8 +127,6 @@ const india = [
    .attr("width", 370)
    .attr("fill", "none")
    .attr("stroke", "#FFE200")
- 
- 
  }
  
  update(india)
@@ -247,71 +245,6 @@ const india = [
  svg3.append("text").attr("x", 30).attr("y", 70).text("In negotiation").style("font-size", "15px").style("fill", "#fff").attr("alignment-baseline","middle")
 
 
-// -------------------------------
-
-
-// const screen1 = document.querySelector("#screen1");
-// const screen2 = document.querySelector("#screen2");
-// const screen3 = document.querySelector("#screen3");
-// const screen4 = document.querySelector("#screen4");
-// const screen5 = document.querySelector("#screen5");
-
-
-// const button4 = document.querySelector("#time4");
-// button4.addEventListener("click", chooseTime4);
-// const button6 = document.querySelector("#time6");
-// button6.addEventListener("click", chooseTime6);
-// const button10 = document.querySelector("#time10");
-// button10.addEventListener("click", chooseTime10);
-// const button13 = document.querySelector("#time13");
-// button13.addEventListener("click", chooseTime13);
-
-
-// function chooseTime4() {
-// 	screen2.classList.remove("show");
-// 	screen3.classList.remove("show");
-// 	screen4.classList.remove("show");
-// 	screen5.classList.remove("show");
-// 	screen2.classList.add("show");
-// 	screen3.classList.add("hide");
-// 	screen4.classList.add("hide");
-// 	screen5.classList.add("hide");
-// }
-
-// function chooseTime6() {
-// 	screen2.classList.remove("show");
-// 	screen3.classList.remove("show");
-// 	screen4.classList.remove("show");
-// 	screen5.classList.remove("show");
-// 	screen2.classList.add("show");
-// 	screen3.classList.add("show");
-// 	screen4.classList.add("hide");
-// 	screen5.classList.add("hide");
-// }
-
-// function chooseTime10() {
-// 	screen2.classList.remove("show");
-// 	screen3.classList.remove("show");
-// 	screen4.classList.remove("show");
-// 	screen5.classList.remove("show");
-// 	screen2.classList.add("show");
-// 	screen3.classList.add("show");
-// 	screen4.classList.add("show");
-// 	screen5.classList.add("hide");
-// }
-
-// function chooseTime13() {
-// 	screen2.classList.remove("show");
-// 	screen3.classList.remove("show");
-// 	screen4.classList.remove("show");
-// 	screen5.classList.remove("show");
-// 	screen2.classList.add("show");
-// 	screen3.classList.add("show");
-// 	screen4.classList.add("show");
-// 	screen5.classList.add("show");
-// }
-
-
 // -------------------------------------
 
 
@@ -367,10 +300,6 @@ function callback2(entries, observer) {
 		if (entry.isIntersecting) {
 			body.style.backgroundImage = '';
 			body.style.backgroundColor = "#3D5A5B";
-			// body.style.backgroundImage = "url(../images/screen21.png)"
-			// body.style.backgroundSize = "cover";
-			// body.style.backgroundRepeat = "no-repeat";
-			// body.style.backgroundAttachment = "fixed";
 		}
 	});
 }
@@ -399,10 +328,6 @@ function callback4(entries, observer) {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
 			body.style.backgroundColor = "#3D5A5B";
-			// body.style.backgroundImage = "url(../images/screen4.jpg)"
-			// body.style.backgroundSize = "cover";
-			// body.style.backgroundRepeat = "no-repeat";
-			// body.style.backgroundAttachment = "fixed";
 		}
 	});
 }
@@ -536,23 +461,6 @@ function switchTaal() {
 
 
 // ------------------------------
-
-
-// var knopIk = document.getElementById("#meknop");
-// var knopGovern = document.getElementById("#governmentknop");
-// var tekstIk = document.getElementById("#me");
-// var tekstGovern = document.getElementById("#government");
-
-  
-// function switchSolution() {  
-//   if (tekstIk.style.display === "none") { 
-// 	tekstIk.style.display = "block";
-//     tekstGovern.style.display = "none"; 
-//   } else {
-//     tekstIk.style.display = "none";
-//     tekstGovern.style.display = "block";
-//   }
-// }
 
 
 const tekstMe = document.querySelector("#me");
