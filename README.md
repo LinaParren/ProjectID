@@ -1,7 +1,7 @@
 # Hi 👋🏻
 
 Welcome to our Readme.md !
-Get info here about our project.
+Get info about our project here.
 If you want to know more indept aspects about the wbsite itself, take a look at our wiki.
 
 <br>
@@ -12,12 +12,7 @@ If you want to know more indept aspects about the wbsite itself, take a look at 
 <br>
 
 ## Concept
-Information as a website
-
-<br>
-
-## Functions
-...
+We have chosen to work with a website. This is accessible to everyone and easy to use. The website goes through different parts, which follow each other logically. We use visualizations to make the large amounts of information clearer. We involve the reader of the website in the subject through interaction.
 
 <br>
 
@@ -43,5 +38,3 @@ To install the project, you must follow the following steps. Make sure that you 
 
 ## License
 Click here to view the <a href='https://github.com/LinaParren/ProjectID/blob/main/LICENSE'>license</a>.
-
-test dennis
