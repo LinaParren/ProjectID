@@ -168,14 +168,8 @@ body {
 #screen2 #content2 #screen23 {
 	display: flex;
 	flex-direction: row;
-	/* border: solid 0.2em white; */
 	width: 40vw;
-	/* padding: 2em; */
-	/* text-align: center; */
-	/* margin-left: auto;
-	margin-right: auto; */
 	margin-top: 5vh;
-	/* margin-bottom: 25vh; */
 }
 
 
@@ -230,12 +224,12 @@ body {
 /* -------- */
 
 #visualisation {
-	margin-top: 100vh;
 	background-color: #3D5A5B;
 	border: solid 0.2em white;
 	padding: 2em;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 100vh;
 	display: flex;
 	justify-content: space-between;
 }
@@ -275,9 +269,7 @@ body {
 	color: #3D5A5B;
 	border: none;
 	padding: 0.5em;
-	font: inherit;
 	cursor: pointer;
-	outline: inherit;
 }
 
 #rates button:focus {
